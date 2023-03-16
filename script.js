@@ -10,18 +10,12 @@ const toggleModal = () => {
 };
 
 buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    toggleModal();
-  });
+  button.addEventListener('click', toggleModal);
 });
 
-overlayEl.addEventListener('click', () => {
-  toggleModal();
-});
+overlayEl.addEventListener('click', toggleModal);
 
-closeBtn.addEventListener('click', () => {
-  toggleModal();
-});
+closeBtn.addEventListener('click', toggleModal);
 
 document.addEventListener('keydown', evt => {
   if (evt.key === 'Escape') {
