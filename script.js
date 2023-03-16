@@ -22,3 +22,9 @@ overlayEl.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
   toggleModal();
 });
+
+document.addEventListener('keydown', evt => {
+  if (evt.key === 'Escape') {
+    toggleModal();
+  }
+});
